@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled JavaScript -->
+<script type="text/javascript" src="JS/form.js">
+
+</script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Home Page</title>
+  </head>
+  <body>
+<!--   Beginning of header     -->
+    <header>
+      <nav >
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Web Accessibilty</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+<!--JS code for collapaseble responsive navbar -->
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+
+      <form class="submitf" name="myForm" onsubmit="return check()" action="index.html"  method="post">
+
+        <input type="text" name="name" id="name" placeholder="Your Name" required><br><br>
+
+        <input type="email" name="email" id="email" placeholder="Your Email address" required><br><br>
+
+        <input   class="message" type="text" name="Message" id="message" placeholder="Type your message here..." required><br><br>
+
+        <button type="submit" name="button"  >Submit</button>
+      </form>
+<article >
+  <span>Contact us today, and get reply with in 24 hours!</span>
+</article>
+    </main>
+
+
+    <!--  Beginning of footer      -->
+    <footer>
+    <article class="footer-des">
+
+      <p>This website is developed in-order to demonstrate the use of WAI-ARIA</p>
+      <h2>Copyrigth reserverd by @Aslesha-Kumbhar</h2>
+    </article>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Latest compiled JavaScript -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Home Page</title>
+  </head>
+  <body>
+<!--   Beginning of header     -->
+    <header>
+      <nav >
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Web Accessibilty</a>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </nav>
+<!--JS code for collapaseble responsive navbar -->
+      <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
+    </header>
+
+<!--   Beginning of Main     -->
+<main>
+<!--   Image with the help of  WAI-ARIA     -->
+  <div class="img-pic" role="img" aria-label="Disabilites">
+  <img src="images/IMG2.png" alt="" >
+  </div>
+
+<!--   video with the help of  WAI-ARIA     -->
+<div class="container">
+  <div class="row">
+    <div class="col col-sm-6 a">
+      <div  class="video-con" >
+       <h1>A First Review of Web Accessibility - W3C WAI Resource Overview<h1>
+      <video width="320" height="240" controls>
+        <source src="video/Sample.mp4" type="video/mp4">
+          <track src="video/captionS.vtt" label="English" kind="captions" srclang="en" >
+
+      </video>
+      </div>
+    </div>
+    <div class="col col-xs-12 a">
+
+      <img style="padding:20px"width="380" height="300" src="images/img2_2.jpg" alt="image showing accessibility">
+
+  </div>
+  <div class="col col-sm-6 b">
+    <div class="article-des">
+      <article>
+        <h2 >What is Web Accessibilty</h2>
+        Accessibility focuses on how a disabled person accesses or benefits from a site, system or application.
+           Accessibility is an important part of the designing your site and should be considered throughout the development process.
+         The Web is an increasingly important resource in many aspects of life: education, employment, government, commerce, health care, recreation, and more.
+        <br>     It is essential that the Web be accessible in order to provide equal access and equal opportunity to people with diverse abilities.
+           Access to information and communications technologies, including the Web, is defined as a basic human right in the United Nations Convention on the Rights of Persons with Disabilities (UN CRPD).
+        <br>
+          The Web offers the possibility of unprecedented access to information and interaction for many people with disabilities.
+          That is, the accessibility barriers to print, audio, and visual media can be much more easily overcome through web technologies.
+      </article>
+    </div>
+  </div>
+</div>
+</div>
+
+</main>
+
+<!--  Beginning of footer      -->
+<footer>
+<article class="footer-des">
+  <p>This website is developed in-order to demonstrate the use of WAI-ARIA</p>
+  <h3>Copyrigth reserverd by @Aslesha-Kumbhar</h3>
+</article>
+
+</footer>
+
+  </body>
+</html>

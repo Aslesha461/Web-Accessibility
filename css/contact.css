@@ -1,0 +1,48 @@
+
+main{
+  box-sizing: border-box;
+  border: 2px solid #6b5b95;
+  max-width: 600px;
+  text-align: center;
+  margin: 20px auto;
+  font-family: "Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+}
+
+.submitf #message{
+  height: 100px;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.submitf #name, #email{
+  max-width: 100%;
+  padding: 10px;
+  margin: 0 0 5px;
+  border:1px solid #CCC;
+	background:#FFF;
+}
+
+.submitf button{
+    max-width: 100%;
+    cursor:pointer;
+    background:#058488;
+	  color:#ffffff;
+	  margin:0 0 5px;
+   	padding:15px;
+	  font-size:20px;
+}
+.submitf button[type="submit"]:hover{
+  background:#09C;
+	-webkit-transition:background 0.3s ease-in-out;
+	-moz-transition:background 0.3s ease-in-out;
+	transition:background-color 0.3s ease-in-out;
+}
+.submitf button[type="submit"]:active{
+  box-shadow:inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+footer{
+  margin-top: 170px;
+}
