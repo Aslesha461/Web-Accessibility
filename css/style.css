@@ -16,7 +16,11 @@ text-align: center;
 }
 body{
   background: #f2f2f2;
+<<<<<<< Updated upstream
   color:purple;
+=======
+  color: #6B5B95;
+>>>>>>> Stashed changes
 }
 
 h1 a:link{
