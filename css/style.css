@@ -22,6 +22,16 @@ body{
 
 }
 
+a#skip,a#skip:hover,a#skip:visited{
+  font-size: 20px;
+  overflow:hidden;
+
+}
+
+a#skip:active,a#skip:focus{
+  position: static;width: auto;height: auto;
+}
+
 h1 a:link{
   text-decoration: none;
 }
